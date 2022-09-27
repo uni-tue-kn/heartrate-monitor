@@ -1,0 +1,22 @@
+<mat-toolbar class="mat-elevation-z2" color="primary">
+  <mat-toolbar-row>
+    <span>HR Monitor</span>
+
+    <span class="spacer"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item (click)="toggleBrightness()">
+        <mat-icon *ngIf="isDarkTheme">light_mode</mat-icon>
+        <mat-icon *ngIf="isLightTheme">dark_mode</mat-icon>
+        <span>Switch Brightness</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

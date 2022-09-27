@@ -1,2 +1,3 @@
-# heartrate-monitor
-Web application for heart rate monitoring with advanded evaluation methods.
+# HR Monitor
+
+Web application for heart rate monitoring with advanced evaluation methods.
